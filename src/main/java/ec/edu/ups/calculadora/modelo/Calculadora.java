@@ -49,21 +49,26 @@ public class Calculadora implements  IOperacion{
 
     @Override
     public double sumar() {
-        return 0;
+        return numero1 + numero2;
     }
 
     @Override
     public double restar() {
-        return 0;
+        return numero1 - numero2;
     }
 
     @Override
     public double multiplicar() {
-        return 0;
+        return numero1 * numero2;
     }
 
     @Override
     public double division() {
+        if (numero2 == 0) {
+            System.out.println("No se puede dividir entre 0");
+        }else{
+            return numero2 / numero1;
+        }
         return 0;
     }
 }
