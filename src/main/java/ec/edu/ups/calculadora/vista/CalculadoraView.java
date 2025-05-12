@@ -262,12 +262,14 @@ public class CalculadoraView extends Frame {
             }
         });
 
+
         checkBoxDivision.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 validarCheckBox((Checkbox) e.getSource());
             }
         });
+
 
         botonCalcular.addActionListener(new ActionListener() {
             @Override
